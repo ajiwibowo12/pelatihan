@@ -61,6 +61,11 @@
                         </div>
 
                         <button class="btn btn-primary" type="button" onclick="tambah()">Tambah</button>
+			<button class="btn btn-primary" type="button" onclick="kurang()">Kurang</button>
+			<button class="btn btn-primary" type="button" onclick="kali()">Kali</button>
+			<button class="btn btn-primary" type="button" onclick="bagi()">Bagi</button>
+			<button class="btn btn-danger pull-right" type="button" onclick="this.form.reset()">Clear</button>
+						
 
 			<div class="form-group">
                             <label for="nama">Hasil</label>
@@ -79,6 +84,27 @@ function tambah() {
    var input2 =  document.getElementById("number2").value;
 
    document.getElementById("hasil").value = parseInt(input1) + parseInt(input2);	
+}
+
+function kurang() {
+   var input1 =  document.getElementById("number1").value;
+   var input2 =  document.getElementById("number2").value;
+
+   document.getElementById("hasil").value = parseInt(input1) - parseInt(input2);	
+}
+
+function kali() {
+   var input1 =  document.getElementById("number1").value;
+   var input2 =  document.getElementById("number2").value;
+
+   document.getElementById("hasil").value = parseInt(input1) * parseInt(input2);	
+}
+
+function bagi() {
+   var input1 =  document.getElementById("number1").value;
+   var input2 =  document.getElementById("number2").value;
+
+   document.getElementById("hasil").value = parseInt(input1) / parseInt(input2);	
 }
 
 </script>
